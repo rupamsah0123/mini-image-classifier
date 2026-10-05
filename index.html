@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Image Classifier</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🧠 Mini Image Classifier</h1>
+
+        <p>
+            Upload an image and let the Deep Learning model
+            identify the object.
+        </p>
+
+        <!-- Image upload -->
+        <input
+            type="file"
+            id="imageInput"
+            accept="image/*"
+        >
+
+        <!-- Image preview -->
+        <div>
+            <img
+                id="preview"
+                src=""
+                alt="Image Preview"
+            >
+        </div>
+
+        <!-- Prediction button -->
+        <button id="predictButton">
+            Predict Image
+        </button>
+
+        <!-- Result -->
+        <div id="result">
+            <p id="prediction"></p>
+            <p id="confidence"></p>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
